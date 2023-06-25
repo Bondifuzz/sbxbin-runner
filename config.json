@@ -1,0 +1,18 @@
+{
+  "command": ["./fuzzer"],
+  "env": [
+    {
+      "name": "SOME_VAR",
+      "value": "some value"
+    }
+  ],
+  "cwd": "./local/fuzzers/libjpeg-turbo",
+  "streams": {
+    "stdin": null,
+    "stdout": "local/streams/stdout.txt",
+    "stderr": "local/streams/stderr.txt"
+  },
+  "poll_interval_ms": 100,
+  "run_timeout_sec": 600,
+  "grace_period_sec": 5
+}
